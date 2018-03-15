@@ -1,0 +1,19 @@
+body {
+	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.bg-blur {
+	float: left;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;          //填滿網頁
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+	filter: blur(15px);
+}
