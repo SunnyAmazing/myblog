@@ -6,6 +6,7 @@
 		.bg 
 		{
             background: "background.jpg";
+			background-attachment: fixed;
         }
 		
 		.bg-blur 
@@ -14,7 +15,7 @@
             width: 100%;
             background-repeat: no-repeat;
             background-position: center;
-            background-size: cover;
+            background-size: cover;          //填滿網頁
             -webkit-filter: blur(15px);
             -moz-filter: blur(15px);
             -o-filter: blur(15px);
@@ -24,10 +25,9 @@
 	</style>
   </head>
 
-  <body background = "background.jpg">
-	<div class = "bg bg-blur">
+  <body>
+	<div class = "bg bg-blur"></div>
     <p> test </p>
     <p> <font color="008800"> more words for this page </font> </p>
-
   </body>
 </html>
