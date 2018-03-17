@@ -15,16 +15,31 @@ body {
 	filter: blur(2px); /* Firefox 35+, eventually all */
 }
 
-#bg {
+#showBg {   /*introduce myself*/
   background-position: center top;
-  padding: 70px 90px 120px 90px;
+  padding: 100px 90px 20px 90px;
 }
 
-#search-container {
+#showBg_other1 {   /*introduce otherthing left*/
+  background-position: center top;
+  padding: 100px 1100px 20px 90px;
+}
+
+#showBg_other2 {   /*introduce otherthing middal*/
+  background-position: center top;
+  padding: 100px 500px 20px 500px;
+}
+
+#showBg_other3 {   /*introduce otherthing right*/
+  background-position: center top;
+  padding: 100px 90px 20px 1100px;
+}
+
+#word-container {
   position: relative;
 }
 
-#search-bg {
+#word-bg {
   /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
   position: absolute;
   top: 0px;
@@ -33,7 +48,7 @@ body {
   left: 0px;
   z-index: 99;
 
-  /* Pull the background 70px higher to the same place as #bg's */
+  /* Pull the background 70px higher to the same place as #wordBg's */
   background-position: center -70px;
 
   -webkit-filter: blur(10px);
@@ -41,20 +56,19 @@ body {
   filter: blur(10px);
 }
 
-#search {
+#word {
   /* Put this on top of the blurred layer */
   position: relative;
   z-index: 100;
   padding: 20px;
-  background: rgb(0,0,0); /* for IE */
-  background: rgba(0,0,0,0.5);
+  background: rgb(255,255,255); /* for IE */
+  background: rgba(255,255,255,0.5);
 }
 
-/*@media (max-width: 600px ) {
-  #bg { padding: 10px; }
-  #search-bg { background-position: center -10px; }
+#word h3, #word h4{
+	text-align: center;
 }
-
-#search h2, #search h5, #search h5 a { text-align: center; color: #fefefe; font-weight: normal; }
-#search h2 { margin-bottom: 50px }
-#search h5 { margin-top: 70px }*/
+.photo {
+	float: left; 
+	margin: 15px;
+}
