@@ -17,22 +17,7 @@ body {
 
 #showBg {   /*introduce myself*/
   background-position: center top;
-  padding: 100px 90px 20px 90px;
-}
-
-#showBg_other1 {   /*introduce otherthing left*/
-  background-position: center top;
-  padding: 100px 1100px 20px 90px;
-}
-
-#showBg_other2 {   /*introduce otherthing middal*/
-  background-position: center top;
-  padding: 100px 500px 20px 500px;
-}
-
-#showBg_other3 {   /*introduce otherthing right*/
-  background-position: center top;
-  padding: 100px 90px 20px 1100px;
+  padding: 30px 90px 50px 90px;
 }
 
 #word-container {
@@ -61,14 +46,21 @@ body {
   position: relative;
   z-index: 100;
   padding: 20px;
-  background: rgb(255,255,255); /* for IE */
+  border: 20px;
+  background: rgb(255,255,255);      /* for IE */
   background: rgba(255,255,255,0.5);
 }
 
-#word h3, #word h4{
-	text-align: center;
+#word h3, #word h4 {
+	: center;
 }
+
 .photo {
 	float: left; 
 	margin: 15px;
+}
+
+a {
+	color: pink;
+	text-decoration:none;
 }
