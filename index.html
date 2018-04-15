@@ -3,14 +3,15 @@
 		<meta charset= "utf-8">
 		<title> My personal page </title>
 		<link href= "css/style.css" rel= "stylesheet" type= "text/css" media= "all" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
-
+	
 	<body>	
-		<div id= "showBg">
+		<div id = "showBg">
 			<div id= "word-container">
 				<div id= "word-bg"></div>
 				<div id= "word">
-					<img  class = "photo" src = "images/photo.png" width = 120 hight = 100>
+					<img id = "avatar" class = "photo" src = "images/photo.png" width = 120 hight = 100>
 					<h1>李禹萱 輔仁大學 資工二甲</h1>
 					<h2>超級喜歡小小兵 請多多指教~</h2>
 					<h4><a href="https://github.com/SunnyAmazing">My github --</a></h4>
@@ -60,5 +61,12 @@
 				</td>
 			</tr>
 		</table>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#showBg").click(function(){
+					$("#avatar").hide();
+				});
+			});
+		</script>
 	</body>
 </html>
